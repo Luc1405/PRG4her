@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', monospace;
+    color: #FFF;
+    font-size: 1.8em;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+scoreboard {
+    transform: translate(20px, 20px);
+}
+
+background, player, scoreboard, enemy, startscreen, bullet, startbutton, boss, timer{
+    position: absolute;
+    display: block;
+    box-sizing:border-box;
+}
+
+bullet {
+    background-image: url('../img/bullet.png');
+    width: 40px;
+    height: 15px;
+    background-size: 100% 100%;
+}
+
+startscreen div, endscreen div {
+    font-size: 3em;
+    padding-top: 26vh;
+    width: 100vw;
+    text-align: center;
+}
+
+startscreen button, endscreen button {
+    font-family: 'VT323', monospace;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-left: calc(50vw - 100px);
+    background-color: green;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+}
+
+background {
+    background-image: url('../img/grass.png');
+    background-position: bottom center;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+}
+
+player {
+    background-image: url('../img/soldier.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+
+enemy {
+    background-image: url('../img/enemy.png');
+    background-size: contain;
+    display: block;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 90px;
+}
+
+startbutton {
+    font-size: 3em;
+    transform: translate(35vw, 36vh);
+    cursor: pointer;
+}
+
+boss {
+    background-image: url('../img/boss.png');
+    background-size: contain;
+    display: block;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 180px;
+}
+
+timer {
+    background-color: green;
+}
